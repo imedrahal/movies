@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+
+}
+body{
+  background-color: #282c34;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.frame-6 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 293px;
+  left: 272px;
+  position: absolute;
+  top: 20px;
+}
+.movienight-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+.movienight {
+  color: #ffffff;
+  font-family: "Archivo Narrow", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-top: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: fit-content;
+margin-left: -30rem;}
