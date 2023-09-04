@@ -3,10 +3,8 @@ import VerticalCarousel from "../components/carousel";
 import CommingThisWeekMovies from "../components/comming";
 import MostRatedMovies from "../components/mostRayed";
 import '../syles/main-page.css'
-
 function MainPage() {
   const [selectedItem, setSelectedItem] = useState(0);
-
   const imageLinks = [
     "https://media.licdn.com/dms/image/D4D12AQFqOj3W65oDHA/article-cover_image-shrink_600_2000/0/1672976585399?e=2147483647&v=beta&t=PcsGUCxFS704LdEqVYA69xC8L1BWqDPjV50wmHc-Y6s",
     "https://losttribe.org/app/uploads/2022/11/2022.11.18_The_Calling_web_banner-1536x461.png.webp",
@@ -16,10 +14,10 @@ function MainPage() {
   const changeImage = () => {
     setSelectedItem((prevItem) => (prevItem + 1) % imageLinks.length);
   };
-
+ 
   useEffect(() => {
     const interval = setInterval(changeImage, 10000);
-    return () => clearInterval(interval);
+    return () => clearInterval(interval);  
   }, []);
 
   return (

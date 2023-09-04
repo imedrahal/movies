@@ -1,5 +1,6 @@
 import React from "react";
 import SearchCard from "../components/Search/search-card";
+import Loading from "../components/loadind"
 import "../syles/search-page.css";
 import "../syles//title-card.css";
 function Search() {
@@ -18,6 +19,7 @@ function Search() {
       <div>
         <SearchCard />
       </div>
+      <Loading/>
     </div>
   );
 }

@@ -1,77 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-grid-carousel";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "../syles/arrow.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
+import axios from "axios";
 function CommingThisWeekMovies() {
   const [imageLoading, setImageLoading] = useState(true);
+  const [comming , setComming]=useState([])
 
-  const movies = [
-    {
-      title: "Movie 1",
-      time: "1h48",
-      imageURL: "https://picsum.photos/800/600?random=1",
-    },
-    {
-      title: "Movie 2",
-      time: "4:30 PM",
-      imageURL: "https://picsum.photos/800/600?random=2",
-    },
-    {
-      title: "Movie 3",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=3",
-    },
-    {
-      title: "Movie 3d",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=4",
-    },
-    {
-      title: "Movie 3d",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=5",
-    },
-    {
-      title: "Movie 3d",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=6",
-    },
-    {
-      title: "Movie 3q",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=7",
-    },
-    {
-      title: "Movie 3f",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=8",
-    },
-    {
-      title: "Movie 3f",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=9",
-    },
-    {
-      title: "Movie 3f",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=10",
-    },
-    {
-      title: "Movie 3f",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=11",
-    },
-    {
-      title: "Movie 3f",
-      time: "7:00 PM",
-      imageURL: "https://picsum.photos/800/600?random=12",
-    },
-    // Add more movies as needed
-  ];
+  const getComming= async() =>{
+    const url = 'https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1';
+    const configs = {
+        headers: {
+          Authorization:
+            "Bearer " +
+            "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNTliZjQ0ZGE2ZmE4MmU5YTdkNTc4NDBmNGY2ZWY2YiIsInN1YiI6IjY0ZjIxNzczNzdkMjNiMDEwZDZjNjNhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hTC1vF-ea3Uk80_cDG6v5Ub34zmXaNmYFPSkyu0LS_Q",
+        },
+      };
+      const response = await axios.get(
+        url,
+        configs
+      );
+      setComming(response.data.results)
+    //   console.log (comming[0].poster_path,'yessss')
+  }
+  useEffect(() => {
+    getComming()}, []);
+    // console.log(comming[0].poster_path,'commm')
 
   return (
     <>
@@ -81,17 +38,17 @@ function CommingThisWeekMovies() {
         className="centered-card-container"
         cols={6}
         rows={1}
-        gap={5}
+        gap={6}
         loop
       >
-        {movies.map((movie, index) => {
+        {comming.map((movie, index) => {
           return (
             <Carousel.Item key={index}>
-              {movie.imageURL ? (
-                <Link key={index} to={`/description/${movie.title}`}>
+              {movie.poster_path ? (
+                <Link key={index} to={`/description/${movie.id}`}>
                   <img
                     className="img-comming-this-week-card"
-                    src={movie.imageURL}
+                    src={`https://image.tmdb.org/t/p/w185/${movie?.poster_path}`}
                     alt={movie.title}
                   />
                 </Link>
