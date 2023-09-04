@@ -1,0 +1,46 @@
+.title{
+    position:absolute;
+    color:#fefafa;
+  font-family: "Archivo Narrow", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-top: 11rem;
+  margin-left: 11rem;
+}
+.Secondtitle{
+    position:absolute;
+    color:#fefafa;
+  font-family: "Archivo Narrow", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 52px;
+  margin-top: 14rem;
+  margin-left: 11rem;
+}
+.grid{
+    color: aqua;
+    margin-top: 17rem;
+    position :absolute;
+    margin-left: 10rem;
+    
+}
+.titlleImage{
+    color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px
+}
+.filmDuration{
+    color: #9B9B9B;
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+body{
+    width: 100%;
+}

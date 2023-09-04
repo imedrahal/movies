@@ -1,12 +1,17 @@
-import './App.css';
 
+import "./App.css";
+import Navbar from "./components/NavBar/Nav";
+import Router from "./route/Route";
 function App() {
   return (
-    <div className="App">
-     <div className="movienight-wrapper">
-              <div className="movienight">MOVIENIGHT</div>
-            </div>
-    </div>
+ <div>
+      <div className="center-content">
+        <Navbar />
+      </div>
+      <div>
+        <Router />
+      </div>{" "}
+      </div>
   );
 }
 
