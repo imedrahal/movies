@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   width: 60%;
+  margin-bottom: 11rem;
 }
 .kVtMtA {
   position: absolute;
@@ -98,8 +99,7 @@
   height: 22px;
   font-size: 1.5rem;
   font-family: inherit;
-  margin: 0px;
-}
+margin-bottom: 11rem;}
 
 .image-hover-effect {
   transition: transform 0.2s ease-in-out;
@@ -228,11 +228,6 @@
   .bhRnqO::before {
     height: 6px; /* Adjust height for 650px screens */
     width: 6px; /* Adjust width for 650px screens */
-  }
-
-  .movie-title {
-    font-size: 0.5rem; /* Adjust font-size for 650px screens */
-    margin-bottom: 12rem;
   }
 
 }

@@ -24,7 +24,7 @@ function CommingThisWeekMovies() {
         configs
       );
       setComming(response.data.results)
-    //   console.log (comming[0].poster_path,'yessss')
+      console.log (comming[0],'yessss')
   }
   useEffect(() => {
     getComming()}, []);
@@ -57,12 +57,12 @@ function CommingThisWeekMovies() {
               )}
               <div>
                 {movie.title ? (
-                  <h3 className="movie-title">{movie.title}</h3>
+                  <h3 className="movie-title" style={{marginBottom:"7rem"}}>{movie.title}</h3>
                 ) : (
                   <Skeleton width={120} height={15} borderRadius={50} />
                 )}
                 <text className="movie-time">
-                  {`${movie.time}`}
+                  {`${movie.original_language}`}
                 </text>
               </div>
             </Carousel.Item>
