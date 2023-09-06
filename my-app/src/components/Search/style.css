@@ -97,7 +97,8 @@
     height: 22px;
     font-size: 1.5rem;
     font-family: inherit;
-    margin: 0px;
+    margin-bottom: 6rem;
+    /* margin: 0px; */
   }
   
   .image-hover-effect {

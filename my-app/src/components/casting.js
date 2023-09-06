@@ -4,14 +4,9 @@ import "../syles/search-card.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "../syles/casting.css";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { BsArrowRightShort } from "react-icons/bs";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { Grid } from 'bootstrap'
-import "../syles/search-card.css";
+
 
 function Casting() {
   const [imageLoading, setImageLoading] = useState(true);
@@ -45,22 +40,12 @@ function Casting() {
     console.log(renderedNames, "dvgdgdcgdcfd")
     List(cast)
   }, [id]);
-  // const cast = useSelector((state) => state.description.casts.items);
-  // const first11Objects = cast?.cast?.slice(0, 11);
-
-
-  // const renderedNames = cast.slice(0, numberOfNamesToDisplay);
+  
 
   const List = async (cast) => {
     const renderedNames = await cast.slice(1, numberOfNamesToDisplay);
     console.log(renderedNames, "listtttt")
-    // return (
-    //   <ul>
-    //     {renderedNames.map((cast,index) => (
-    //       <li key={index}>{cast}</li>
-    //     ))}
-    //   </ul>
-    // );
+   
   };
 
   const Button = () => {
@@ -75,15 +60,7 @@ function Casting() {
   return (
     <div className="casting-rows">
       <p className="text-white display-6">Casting</p>
-      {/* <ul>
-        {(cast.slice(1, numberOfNamesToDisplay)).map((act,index) => (
-          <li style={{color:"white"}} key={index}>{act.name}</li>
-        ))}
-      </ul>
-      {cast.length > numberOfNamesToDisplay && (
-        <Button >Voir tous</Button>
-      )} */}
-      {/* <img src={`https://image.tmdb.org/t/p/w185/${image.profile_path}`} alt={image.alt} /> */}
+     
 
       <div className="container"  >
         <div className="row" style={{ marginTop: "5rem", marginLeft: "-10rem" }}>
@@ -102,10 +79,6 @@ function Casting() {
               }`}
           />)}
            <h6 style={{color:"white"}}>name: {image.name} </h6>  
-              {/* <h6 style={{color:"white"}}>name character: {image.character} </h6> */}
-          {/* <img src={`https://image.tmdb.org/t/p/w185/${image.profile_path}`}  style={{marginBottom:"1rem" }} alt={image.cast_id} /> 
-<h6 style={{color:"white"}}>name: {image.name} </h6> 
-<h6 style={{color:"white"}}>name character: {image.character} </h6>         */}
 </div>
         ))}
           {cast.length > numberOfNamesToDisplay && (
