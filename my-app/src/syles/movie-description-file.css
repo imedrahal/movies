@@ -5,12 +5,10 @@
     margin: 0 auto;
 margin-top: 2rem;
   }
-/* movie-description-file.css */
 .movie-synopsis {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 10px;
-  max-width: 400px; /* Adjust the width as needed */
+  max-width: 400px; 
   word-wrap: break-word;
-  /* Add any other styles you want to apply to the synopsis text here */
 }

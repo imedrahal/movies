@@ -1,17 +1,14 @@
 import React, { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
 import AddButton from "../components/buttons/Regarder";
 import StarButton from "../components/buttons/statusButton";
 import axios from "axios";
-import "../syles/movie-description-file.css"; // Import your CSS file with the play-button class
+import "../syles/movie-description-file.css"; 
 
 function MovieDescription(props) {
-  const [imageLoading, setImageLoading] = useState(true);
   const [description,setDescription]=useState([])
   const [genere,setGenere]=useState([])
 
@@ -139,65 +136,9 @@ function MovieDescription(props) {
           {description.overview}
         </p>
         <div style={{ display: "flex", marginBottom: "20px" }}>
-          {/* <div style={{ marginRight: "100px" ,color: "white",
-}}>
-          {genere ? (
-                description?.production_companies.map((element) => "name of companie "+element?.name + ", "+"origin country: "+element?.origin_country)
-              ) : (
-                <Skeleton width={200} height={20} />
-              )}
-            <p
-              style={{
-                fontSize: "20px",
-                fontWeight: 500,
-                color: "white",
-                margin: "0px",
-              }}
-            >
-lowell            </p>
-            <p className="text-white">lowell</p>
-          </div> */}
-          {/* <div>
-            <p
-              style={{
-                fontSize: "20px",
-                fontWeight: 500,
-                color: "white",
-                margin: "0px",
-              }}
-            >
-              lowell
-            </p>
-            <p className="text-white">lowell</p>{" "}
-          </div> */}
         </div>
         <div style={{ display: "flex" }}>
-          {/* <div style={{ marginRight: "100px" }}>
-            <p
-              style={{
-                fontSize: "20px",
-                fontWeight: 500,
-                color: "white",
-                margin: "0px",
-              }}
-            >
-              thelith
-            </p>
-            <p className="text-white">thelith</p>{" "}
-          </div> */}
-          {/* <div>
-            <p
-              style={{
-                fontSize: "20px",
-                fontWeight: 500,
-                color: "white",
-                margin: "0px",
-              }}
-            >
-              {description.person4}
-            </p>
-            <p className="text-white">{description.role}</p>{" "}
-          </div> */}
+        
         </div>
       </div>
 

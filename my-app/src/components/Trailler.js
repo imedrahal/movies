@@ -8,49 +8,14 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { ImPlay3 } from "react-icons/im"; // Import the play button icon
+import { ImPlay3 } from "react-icons/im"; 
 
-import  "../syles/trailer.css"; // Import your CSS file with the play-button class
+import  "../syles/trailer.css"; 
 
 function Trailers(props) {
   const [imageLoading, setImageLoading] = useState(true);
   const[videos,setVideos]=useState([])
   const { id } = useParams();
-
-  const trailers = [
-    {
-      title: "Movie 1",
-      imageURL:
-        "https://media-mcetv.ouest-france.fr/wp-content/uploads/2023/02/the-batman-la-suite-du-film-avec-robert-pattinson-a-une-date-de-sortie-1200-min.jpg",
-    },
-    {
-      title: "Movie 1",
-      imageURL:
-        "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg",
-    },
-    {
-      title: "Movie 1",
-      imageURL:
-        "https://fr.web.img5.acsta.net/pictures/22/02/16/17/42/3125788.jpg",
-    },
-  ];
-
-  // const fetchMovieVideos= async(id) =>{
-  //   const configs = {
-  //       headers: {
-  //         Authorization:
-  //           "Bearer " +
-  //           "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNTliZjQ0ZGE2ZmE4MmU5YTdkNTc4NDBmNGY2ZWY2YiIsInN1YiI6IjY0ZjIxNzczNzdkMjNiMDEwZDZjNjNhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hTC1vF-ea3Uk80_cDG6v5Ub34zmXaNmYFPSkyu0LS_Q",
-  //       },
-  //     };
-  //     const response = await axios.get(
-  //       `https://api.themoviedb.org/3/movie/${id}/videos`,
-  //       configs
-  //     );
-  //     setVideos(response)
-  //     // console.log (id,videos,'video')
-  // }
-
 
   const fetchMovieImage= async(id) =>{
     const configs = {
@@ -110,4 +75,4 @@ function Trailers(props) {
 
 export default Trailers;
 
-//////////// i didn't found video for annonce i got the images of films
+//////////// i didn't found video for annonce i got the images of films from tmdb

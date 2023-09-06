@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-grid-carousel";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import "../syles/arrow.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import axios from "axios";
 function CommingThisWeekMovies() {
-  const [imageLoading, setImageLoading] = useState(true);
   const [comming , setComming]=useState([])
 
   const getComming= async() =>{
@@ -32,7 +31,7 @@ function CommingThisWeekMovies() {
 
   return (
     <>
-      <p className="comming-this-week-title">A l'affiche cette semaine</p>
+      <p className="comming-this-week-title"> l'affiche de cette semaine</p>
 
       <Carousel
         className="centered-card-container"

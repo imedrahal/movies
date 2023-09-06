@@ -2,24 +2,6 @@
 import React, {useState } from 'react';
 import "./style.css";
 
-const data = [
-  {im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg", title: 'colone 1', content: 'alooooooooooooooo' },
-  {im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg", title: 'colone 2', content: 'alooooooooooooooooo' },
-  { im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg",title: 'colone 3', content: 'alooooooooooooooooo' },
-  { im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg",title: 'colone 4', content: 'alooooooooooooooooo' },
-  { im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg",title: 'colone 4', content: 'alooooooooooooooooo' },
-  { im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg",title: 'colone 4', content: 'alooooooooooooooooo' },
-  { im:"https://www.enwallpaper.com/wp-content/uploads/2021/07/the-batman-fanart-6322.jpg",title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-  { title: 'colone 4', content: 'alooooooooooooooooo' },
-];
    
 function Resultes() {
     const [numberOfNamesToDisplay, setNumberOfNamesToDisplay] = useState(6);

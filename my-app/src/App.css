@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("https://losttribe.org/app/uploads/2022/11/2022.11.18_The_Calling_web_banner-1536x461.png.webp");
-}
+  }
 .center-content {
   display: flex;
   flex-direction: column;

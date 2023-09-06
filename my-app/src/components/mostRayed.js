@@ -59,7 +59,7 @@ const getTopRated= async() =>{
                       height: "5px",
                       marginRight: "10px",
                       backgroundColor: "black",
-                      marginTop:"5rem"
+                      marginTop:"1rem"
                     }}
                   >
                     <div
@@ -71,7 +71,7 @@ const getTopRated= async() =>{
                       aria-valuemax="100"
                     ></div>
                   </div>
-                  <div style={{marginTop:"5rem"}}>
+                  <div style={{marginTop:"1rem"}}>
                   {movie.vote_average*10}%
                   </div>
                   

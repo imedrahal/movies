@@ -29,22 +29,19 @@ function Casting() {
       configs
     );
     setCast(response.data.cast)
-    // setRenderedNames(response.data);
     console.log(response.data.cast, 'clggggg')
   };
 
-
-
   useEffect(() => {
     getCast(id)
-    console.log(renderedNames, "dvgdgdcgdcfd")
+    // console.log(renderedNames, "dvgdgdcgdcfd")
     List(cast)
   }, [id]);
   
 
   const List = async (cast) => {
     const renderedNames = await cast.slice(1, numberOfNamesToDisplay);
-    console.log(renderedNames, "listtttt")
+    // console.log(renderedNames, "listtttt")
    
   };
 
@@ -87,45 +84,7 @@ function Casting() {
         </div>
       </div>
 
-      {/* <div>
-      <h1>Names</h1>
-      <List names={cast} />
-      <Button />
-    </div> */}
-      {/* {first11Objects?.map((movie, movieIndex) => (
-        <Col key={movieIndex} md={2} className="mb-5">
-          {movie?.profile_path ? (
-            <Card.Img
-              variant="top"
-              src={`https://image.tmdb.org/t/p/w185/${movie?.profile_path}`}
-              onLoad={() => setImageLoading(false)}
-              onError={() => setImageLoading(false)}
-              className="casting-imgs"
-            />
-          ) : (
-            <Skeleton
-              height="9rem"
-              width="9rem"
-              className={`skeleton wave-animation ${
-                imageLoading ? "hidden" : ""
-              }`}
-            />
-          )}
-
-          <Card.Body>
-            <Card.Title style={{ color: "white", fontSize: "20px" }}>
-              {movie?.original_name}
-            </Card.Title>
-            <Card.Text style={{ color: "grey" }}>{movie.character}</Card.Text>
-          </Card.Body>
-        </Col>
-      ))}
-
-      <Col md={2} className="pt-5">
-        <p style={{ color: "white", cursor: "pointer" }}>
-          Voir tout <BsArrowRightShort color="white" fontSize={25} />
-        </p>
-      </Col> */}
+      
     </div>
   );
 }

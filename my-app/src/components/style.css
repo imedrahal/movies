@@ -359,18 +359,18 @@
 
   .centered-card-container {
     width: 70%;
-    justify-content: start; /* Align contents to the start */
+    justify-content: start; 
   }
   .kVtMtA,
   .bhRnqO {
-    width: 35px; /* Adjust width for smaller screens */
-    height: 20px; /* Adjust height for smaller screens */
+    width: 35px; 
+    height: 20px; 
   }
 
   .kVtMtA::before,
   .bhRnqO::before {
-    height: 8px; /* Adjust height for smaller screens */
-    width: 7px; /* Adjust width for smaller screens */
+    height: 8px; 
+    width: 7px; 
   }
   .comming-this-week-title {
     font-size: 15px;
@@ -379,13 +379,13 @@
     margin-left: -33px;
   }
   .movie-title {
-    font-size: 1.2rem; /* Adjust font-size for smaller screens */
+    font-size: 1.2rem; 
   }
 }
 @media (max-width: 650px) {
   .search-card-div {
-    width: 100%; /* Adjust width for 650px screens */
-    margin-top: 1rem; /* Adjust margin-top for 650px screens */
+    width: 100%; 
+    margin-top: 1rem; 
     justify-content: start;
   }
 
@@ -421,11 +421,11 @@
     transform: translateX(0);
   }
   .search-card-div {
-    width: 50%; /* Adjust width for smaller screens */
-    margin-top: 3rem; /* Adjust margin-top for smaller screens */
+    width: 50%; 
+    margin-top: 3rem; 
   }
   .centered-card-container {
-    width: 100%; /* Adjust width for 650px screens */
+    width: 100%; 
   }
   .comming-This-Week {
     width: 90%;
@@ -436,8 +436,8 @@
 
   .kVtMtA,
   .bhRnqO {
-    width: 30px; /* Adjust width for 650px screens */
-    height: 15px; /* Adjust height for 650px screens */
+    width: 30px; 
+    height: 15px; 
   }
   .movie-time {
     color: darkgray;
@@ -446,12 +446,12 @@
   }
   .kVtMtA::before,
   .bhRnqO::before {
-    height: 6px; /* Adjust height for 650px screens */
-    width: 6px; /* Adjust width for 650px screens */
+    height: 6px; 
+    width: 6px; 
   }
 
   .movie-title {
-    font-size: 1rem; /* Adjust font-size for 650px screens */
+    font-size: 1rem; 
   }
   .progress {
     height: 2px;
@@ -460,11 +460,11 @@
 .movie-list-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Gap between movie items */
+  gap: 10px; /
 }
 
 .movie-item {
-  width: calc(33.33% - 10px); /* Adjust the width to fit 3 items per row with a gap of 10px */
+  width: calc(33.33% - 10px); 
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -479,10 +479,10 @@
 }
 
 .play-button-circle {
-  width: 4rem; /* Adjust the size as needed */
-  height: 4rem; /* Adjust the size as needed */
+  width: 4rem; 
+  height: 4rem; 
   background: rgba(255, 255, 255, 0.50);
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,12 +516,10 @@
   margin: 0 auto;
 margin-top: 2rem;
 }
-/* movie-description-file.css */
 .movie-synopsis {
 font-size: 16px;
 line-height: 1.5;
 margin-top: 10px;
-max-width: 400px; /* Adjust the width as needed */
+max-width: 400px; 
 word-wrap: break-word;
-/* Add any other styles you want to apply to the synopsis text here */
 }
