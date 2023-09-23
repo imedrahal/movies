@@ -30,6 +30,7 @@ function MainPage() {
 
   return (
     <div >
+    
       { loading? 
       <div style={{marginTop:"11rem",marginLeft:"43rem"}}>
     < ClipLoader 
