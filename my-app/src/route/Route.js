@@ -9,7 +9,7 @@ function Router() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />}></Route>
+          <Route path="" element={<MainPage />}></Route>
           <Route path="/description/:id" element={<Description />}></Route>
           <Route path="/search" element={<Search />}></Route>
         </Routes>
