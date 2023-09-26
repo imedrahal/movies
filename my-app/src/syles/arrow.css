@@ -162,8 +162,8 @@ margin-bottom: 11rem;}
 }
 @media (max-width: 650px) {
   .search-card-div {
-    width: 100%; 
-    margin-top: 1rem; 
+    width: 50%;
+    margin-top: 3rem;
     justify-content: start;
   }
 
@@ -172,13 +172,14 @@ margin-bottom: 11rem;}
     margin-top: 3rem;
     color: white;
     margin-left: 7px;
+    /* width: 50%; */
   }
   .img-comming-this-week-card {
-    border-radius: 3px;
+    border-radius: 9px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 170px;
-    width: 7rem;
-    margin: 0;
+    width: 2rem;
+    margin: 90;
   }
   .eAUkNO {
     width: 133px;

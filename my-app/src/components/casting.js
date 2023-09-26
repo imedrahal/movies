@@ -79,7 +79,7 @@ function Casting() {
 </div>
         ))}
           {cast.length > numberOfNamesToDisplay && (
-            <Button >Voir tous</Button>
+            <Button  >Voir tous</Button>
           )}
         </div>
       </div>
